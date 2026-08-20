@@ -1,0 +1,9 @@
+"use client";
+import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
+const growth = [{m:"Jan",v:3.1},{m:"Feb",v:4.4},{m:"Mar",v:5.0},{m:"Apr",v:6.8},{m:"May",v:8.1},{m:"Jun",v:10.2},{m:"Jul",v:12.8}];
+const industry = [{name:"Energy",value:31},{name:"FinTech",value:23},{name:"Health",value:18},{name:"Semiconductor",value:15},{name:"Other",value:13}];
+const risk = [{risk:"Low",roi:24},{risk:"Medium",roi:19},{risk:"High",roi:28}];
+const tooltip = { contentStyle:{background:"var(--surface-strong)",border:"1px solid var(--line)",borderRadius:12,color:"var(--text)"}, itemStyle:{color:"var(--text)"} };
+export function GrowthChart() { return <ResponsiveContainer width="100%" height={260}><LineChart data={growth}><CartesianGrid strokeDasharray="3 3" stroke="var(--grid)"/><XAxis dataKey="m" stroke="var(--muted)"/><YAxis stroke="var(--muted)"/><Tooltip {...tooltip}/><Line type="monotone" dataKey="v" stroke="var(--accent-b)" strokeWidth={3} dot={false}/></LineChart></ResponsiveContainer> }
+export function IndustryChart() { const cells=["var(--accent-a)","var(--accent-b)","var(--accent-c)","var(--accent-d)","var(--accent-e)"]; return <ResponsiveContainer width="100%" height={260}><PieChart><Pie data={industry} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={88} innerRadius={55}>{industry.map((_,i)=><Cell key={i} fill={cells[i]}/>)}</Pie><Tooltip {...tooltip}/></PieChart></ResponsiveContainer> }
+export function RiskChart() { return <ResponsiveContainer width="100%" height={260}><BarChart data={risk}><CartesianGrid strokeDasharray="3 3" stroke="var(--grid)"/><XAxis dataKey="risk" stroke="var(--muted)"/><YAxis stroke="var(--muted)"/><Tooltip {...tooltip}/><Bar dataKey="roi" fill="var(--accent-a)" radius={[8,8,0,0]}/></BarChart></ResponsiveContainer> }

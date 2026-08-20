@@ -1,0 +1,86 @@
+[
+  {
+    "id": "INV-01",
+    "name": "BlueRiver Ventures 1",
+    "aum": 498,
+    "focus": "Agritech"
+  },
+  {
+    "id": "INV-02",
+    "name": "Bharat Impact Fund 2",
+    "aum": 217,
+    "focus": "FinTech"
+  },
+  {
+    "id": "INV-03",
+    "name": "Pioneer Growth 3",
+    "aum": 610,
+    "focus": "Agritech"
+  },
+  {
+    "id": "INV-04",
+    "name": "Apex Capital 4",
+    "aum": 856,
+    "focus": "Healthcare"
+  },
+  {
+    "id": "INV-05",
+    "name": "Vertex Capital 5",
+    "aum": 301,
+    "focus": "Semiconductor"
+  },
+  {
+    "id": "INV-06",
+    "name": "Bharat Impact Fund 6",
+    "aum": 94,
+    "focus": "Healthcare"
+  },
+  {
+    "id": "INV-07",
+    "name": "Mango Tree Partners 7",
+    "aum": 171,
+    "focus": "Agritech"
+  },
+  {
+    "id": "INV-08",
+    "name": "Horizon Family Office 8",
+    "aum": 525,
+    "focus": "FinTech"
+  },
+  {
+    "id": "INV-09",
+    "name": "Horizon Family Office 9",
+    "aum": 361,
+    "focus": "Agritech"
+  },
+  {
+    "id": "INV-10",
+    "name": "Pioneer Growth 10",
+    "aum": 613,
+    "focus": "Semiconductor"
+  },
+  {
+    "id": "INV-11",
+    "name": "Bharat Impact Fund 11",
+    "aum": 487,
+    "focus": "Clean Energy"
+  },
+  {
+    "id": "INV-12",
+    "name": "Mango Tree Partners 12",
+    "aum": 601,
+    "focus": "Agritech"
+  },
+  {
+    "id": "INV-13",
+    "name": "Bharat Impact Fund 13",
+    "aum": 209,
+    "focus": "FinTech"
+  },
+  {
+    "id": "INV-14",
+    "name": "Vertex Capital 14",
+    "aum": 845,
+    "focus": "Healthcare"
+  }
+]
